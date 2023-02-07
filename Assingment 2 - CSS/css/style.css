@@ -1,0 +1,152 @@
+/*I am giving a header making it orange, adding a photo of the album, and information reguarding the song */
+body{
+    margin: 0px;
+    background-color: #f4f4f4;
+}
+header{
+    width:100%;
+    margin: 0px;
+    display:flex;
+    height: 40px;
+    background-color: #b96d3f;
+    justify-content: space-evenly;
+
+}
+li {
+    text-decoration: none;
+}
+
+header ul{
+    width: 33%;
+    height: 30px;
+
+}
+header ul:first-of-type{
+    display:flex;
+}
+body header ul li{
+    text-decoration: none;
+    
+}
+header ul:first-of-type li{
+    display:flex;
+    justify-content: space-evenly;
+    width:20%;
+}
+
+header p{
+    width: 33%;
+    text-decoration: none;
+    text-align: right;
+    justify-content: right;
+    padding-right: 15px;
+}
+
+header h5{
+    width: 33%;
+    margin:16px;
+    height:40px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+/* Here I want to change the look of the header to create a gradiant*/
+.title{
+    display: flex;
+    align-items: center;
+    height: 300px;
+    padding: 0px 0px;
+   /* background-color: #A4B494;*/
+  /* background-color: #94BFBE;*/
+  /* background-color: #a02d2d;*/
+   background-image: linear-gradient(#b96d3f,#bc3636 ,#940c0c);
+   color: #f4f4f4;
+
+}
+.title div {
+    height:200px;
+    width: auto;
+    flex-grow: 1;
+    text-align: left;
+    padding-left: 10px;
+}
+.title div img{
+    height: 150%;
+    width: auto;
+
+}
+/*I am fixing the main body, changing the font, and aligning it to the center */
+
+main{
+    font-family: 'EB Garamond', serif;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+/*
+This was for a section that was meant to have everything be hover and you followed the text with the mouse as you 
+listen to the song - but I realized that this was overkill
+#space:hover{
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+.upside-down:hover{
+    display: inline-block;
+    transform: scale(1, -1);
+    /*-moz-transform: scale(1,-1);
+}*/
+/*spacing the letters and making it bolded - note, "nh" is there for the no hover version of the page */
+.space-nh{
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+/*I am flipping the text where the word nonsense appear as it would appear as nonsense
+https://www.w3schools.com/cssref/css3_pr_transform.php is where I learnt how to do it  */
+.upside-down-nh{
+    display: inline-block;
+    transform: scale(1, -1);
+    /*-moz-transform: scale(1,-1);*/
+}
+/*I am changing the text color and writting to make it appear more "romantic" for the word love*/
+.love-nh{
+    font-family: 'Dancing Script', cursive;
+    color: #940c0c;
+}
+/*changing every section that appears in quotes to look "handwritten"*/
+.quote{
+    font-family: 'Shadows Into Light', cursive;
+}
+/* this will raise the text above the x axis while the other bellow called low will bring it bellow the x axis*/
+.top-nh{
+    display: inline-block;
+    transform: translate(0px,-10px);
+}
+.low-nh{
+    display: inline-block;
+    transform: translate(0px,10px);
+}
+/*verse two end of each line is bolded to add to the emphasise*/
+.vt-end-nh{
+    font-weight: bold;
+}
+/*I want to lighten (but this does not work) so I lightened the color of the background vocals */
+.parathes-nh{
+    font-weight:lighter;
+    color:#868686;
+}
+/*This was meant to strike out the previous line, then the following line was going to cross everything out 
+but that would require j-query, and that may be over the top */
+.cross:hover{
+    text-decoration:line-through;
+}
+/*footer contains the same gradiant effect with the copyright of the lyrics*/
+footer{
+    height:50px;
+    background-image: linear-gradient(#940c0c,#bc3636, #b96d2f);
+    color: #f4f4f4;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
